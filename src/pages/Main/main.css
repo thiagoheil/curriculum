@@ -1,0 +1,668 @@
+:root {
+  --fundo-black: #202124;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(90deg, #c42c1b, #c4b01b, #1cba21, #1ecdd6);
+  animation: gradient 15s ease infinite;
+  height: 100%;
+  background-size: 400% 400%;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cardThiago {
+  border-radius: 0.4rem;
+  background-image: url(./img/2.jfif);
+  background-repeat: 2;
+  width: 85%;
+  height: 15rem;
+  box-shadow: inset 0px 0px 50px 10px black;
+  border: 4px solid white;
+  margin-left: 3.9rem;
+  margin-top: 2rem;
+}
+
+.divheader {
+  margin-top: -6rem;
+  margin-left: 6rem;
+}
+
+.imgThiago {
+  height: 15rem;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0px 0px 28px 10px black;
+}
+
+.text-name {
+  padding-top: 10rem;
+}
+
+.h2Thiago {
+  color: white;
+  font-size: 28px;
+  margin: 1.5rem 0 0 0;
+}
+
+.jobthiago {
+  color: white;
+  font-weight: 100;
+  margin: 0 0 1.5rem 0;
+  font-size: 20px;
+}
+
+.textnome {
+  margin-left: -2rem;
+}
+
+.background2 {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  background-color: white;
+  height: 90%;
+  border-radius: 0.4rem;
+  border: 4px solid linear-gradient(90deg, #ffffff);
+  animation: gradient 15s ease infinite;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.background1 {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex-direction: column;
+  width: 90%;
+  height: 600px;
+  background-color: #202124;
+  border-radius: 0.4rem;
+  border: 1px solid black;
+  margin-top: 2.5rem;
+}
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+  margin-left: 15rem;
+}
+
+.tag h1,
+h3 {
+  margin: 3px;
+}
+
+.div-botoes {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+  width: 87%;
+  background-color: #202124;
+  border-radius: 0.4rem;
+}
+
+button {
+  width: 200px;
+  height: 4rem;
+  border-radius: 0.4rem;
+  transition-duration: 0.4s;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.linkedin {
+  border: solid 2px #0e76a8;
+  color: black;
+
+  background-image: linear-gradient(45deg, #0e76a8 40%, transparent 60%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 500ms ease-in-out;
+  transition: background 500ms ease-in-out;
+}
+
+.linkedin:hover {
+  background-position: 0;
+  color: #fff;
+  box-shadow: 0 5px 0 #052838;
+}
+
+.linkedin:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
+}
+
+.meusprojetosbutton {
+  border: solid 2px #3c0541;
+  color: black;
+
+  background-image: linear-gradient(45deg, #3c0541 40%, transparent 60%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 500ms ease-in-out;
+  transition: background 500ms ease-in-out;
+}
+
+.meusprojetosbutton:hover {
+  background-position: 0;
+  color: rgb(240, 196, 3);
+  box-shadow: 0 5px 0 #210324;
+}
+
+/* .meusprojetosbutton {
+  border: solid 2px #085827;
+  color: black;
+
+  background-image: linear-gradient(45deg, #085827 40%, transparent 60%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 500ms ease-in-out;
+  transition: background 500ms ease-in-out;
+}
+
+.meusprojetosbutton:hover {
+  background-position: 0;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 5px 0 #03200e;
+} */
+
+.meusprojetosbutton:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
+}
+
+.youtube {
+  border: solid 2px #ff0000;
+  color: black;
+
+  background-image: linear-gradient(45deg, #ff0000 40%, transparent 60%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 500ms ease-in-out;
+  transition: background 500ms ease-in-out;
+}
+
+.youtube:hover {
+  background-position: 0;
+  color: #fff;
+  box-shadow: 0 5px 0 #420000;
+}
+
+.instagram:hover {
+  background-position: 0;
+  color: #fff;
+  box-shadow: 0 5px 0 #7a1b66;
+}
+
+.youtube:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
+}
+
+.instagram:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
+}
+
+.instagram {
+  border: solid 2px #c32aa3;
+  color: black;
+  background-image: linear-gradient(
+    45deg,
+    #ffdc7d 10%,
+    #f46f30 20%,
+    #7232bd 30%,
+    #4c5fd7 40%,
+    #c32aa3 50%,
+    transparent 60%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 500ms ease-in-out;
+  transition: background 500ms ease-in-out;
+}
+
+/* ========================= QUEM SOU ================== */
+
+.quemsou {
+  background-color: var(--fundo-black);
+  border-radius: 0.4rem;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  width: 90%;
+  height: 500px;
+}
+
+.div-quemsou h1 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.div-quemsou p {
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+/* ========================= EXPERIENCIA ================== */
+
+.exp {
+  background-color: var(--fundo-black);
+  border-radius: 0.4rem;
+  width: 90%;
+  height: 450px;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.exp h1 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 28px;
+}
+
+.paipe {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  display: flex;
+}
+
+.img-paipe {
+  width: 100px;
+  height: 100px;
+}
+
+.paipe-text {
+  margin-left: 1rem;
+}
+
+.paipe-text h3 {
+  font-weight: 100;
+}
+
+.paipe-text h2 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.next {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  display: flex;
+}
+
+.img-next {
+  width: 100px;
+  height: 100px;
+}
+
+.next-text {
+  margin-left: 1rem;
+}
+
+.next-text h3 {
+  font-weight: 100;
+}
+
+.next-text h2 {
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ========================= RESPONSIVE ================== */
+
+@media (max-width: 800px) {
+  .background2 {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    background-color: white;
+    height: 98%;
+    border-radius: 0.4rem;
+    border: 4px solid linear-gradient(90deg, #ffffff);
+    animation: gradient 15s ease infinite;
+  }
+
+  .background1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardThiago {
+    margin-left: 2.3rem;
+  }
+
+  .h2Thiago {
+    font-size: 26px;
+    margin-left: -2.5rem;
+  }
+
+  .tag {
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+
+    color: white;
+    padding-top: srem;
+  }
+
+  .tag h1,
+  h3 {
+    margin: 3px;
+  }
+
+  .divheader {
+    margin-top: -9rem;
+    margin-left: 10rem;
+  }
+
+  .h2Thiago {
+    color: white;
+    font-size: 28px;
+    margin: 1.5rem 0 0 0;
+  }
+
+  .textnome {
+    margin-left: -3.3rem;
+  }
+
+  .jobthiago {
+    color: white;
+    font-weight: 100;
+    margin: 0 0 1.5rem 1.9rem;
+    font-size: 20px;
+  }
+
+  .quemsou {
+    background-color: var(--fundo-black);
+    border-radius: 0.4rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    width: 90%;
+    height: 600px;
+  }
+
+  .background2 {
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2000px;
+  }
+
+  .background2 {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: white;
+    height: 1900px;
+    border-radius: 0.4rem;
+    border: 4px solid linear-gradient(90deg, #ffffff);
+    animation: gradient 15s ease infinite;
+  }
+
+  .background1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardThiago {
+    margin-left: 1.8rem;
+  }
+
+  .h2Thiago {
+    font-size: 10px;
+    margin-left: -2.5rem;
+  }
+
+  .tag {
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+
+    color: white;
+    padding-top: srem;
+  }
+
+  .tag h1,
+  h3 {
+    margin: 3px;
+  }
+
+  .divheader {
+    margin-top: -9rem;
+    margin-left: 6rem;
+  }
+
+  .h2Thiago {
+    color: white;
+    font-size: 28px;
+    margin: 1.5rem 0 0 0;
+  }
+
+  .textnome {
+    margin-left: -3.3rem;
+  }
+
+  .jobthiago {
+    color: white;
+    font-weight: 100;
+    margin: 0 0 1.5rem 1.9rem;
+    font-size: 20px;
+  }
+
+  .quemsou {
+    background-color: var(--fundo-black);
+    border-radius: 0.4rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    width: 90%;
+    height: 700px;
+  }
+
+  .exp {
+    height: 500px;
+  }
+
+  @media (max-width: 375px) {
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2000px;
+    }
+
+    .background2 {
+      display: flex;
+      justify-content: top;
+      align-items: center;
+      flex-direction: column;
+      width: 90%;
+      background-color: white;
+      height: 1800px;
+      border-radius: 0.4rem;
+      border: 4px solid linear-gradient(90deg, #ffffff);
+      animation: gradient 15s ease infinite;
+    }
+
+    .background1 {
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+    }
+
+    .cardThiago {
+      margin-left: 1.2rem;
+    }
+
+    .imgThiago {
+      height: 180px;
+      margin-left: -2.5rem;
+    }
+
+    .tag {
+      display: flex;
+      flex-direction: column;
+      align-items: bottom;
+
+      color: white;
+      padding-top: srem;
+    }
+
+    .tag h1,
+    h3 {
+      margin: 3px;
+    }
+
+    .divheader {
+      margin-top: -9rem;
+      margin-left: 6rem;
+    }
+
+    .h2Thiago {
+      color: white;
+      font-size: 19px;
+      margin: 1.5rem 0 0 -1rem;
+    }
+
+    .textnome {
+      margin-left: -3.3rem;
+    }
+
+    .jobthiago {
+      color: white;
+      font-weight: 100;
+      margin: 0 0 1.5rem 0rem;
+      font-size: 14px;
+    }
+
+    .quemsou {
+      background-color: var(--fundo-black);
+      border-radius: 0.4rem;
+
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      width: 90%;
+      height: 700px;
+    }
+
+    .quemsou p {
+      font-size: 14px;
+    }
+
+    .exp {
+      height: 480px;
+    }
+
+    .img-paipe {
+      width: 80px;
+      height: 80px;
+    }
+
+    .img-next {
+      width: 80px;
+      height: 80px;
+    }
+
+    .paipe {
+      margin-left: 1.5rem;
+    }
+
+    .paipe-text h2 {
+      font-size: 20px;
+    }
+
+    .paipe-text h3 {
+      font-size: 15px;
+    }
+
+    .next {
+      margin-left: 1.5rem;
+    }
+
+    .next-text h2 {
+      font-size: 20px;
+    }
+
+    .next-text h3 {
+      font-size: 15px;
+    }
+
+    .div-botoes {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .imgThiago {
+      margin-left: -3.3rem;
+    }
+
+    .h2Thiago {
+      font-size: 18px;
+      margin-left: -1.6rem;
+    }
+
+    .jobthiago {
+      margin-left: -1rem;
+    }
+
+    .div-botoes {
+      padding: 1rem 2rem 1rem 1rem;
+    }
+  }
+}
