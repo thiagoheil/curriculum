@@ -173,7 +173,13 @@ button:hover {
   border: solid 2px #3c0541;
   color: black;
 
-  background-image: linear-gradient(45deg, #3c0541 40%, transparent 60%);
+  background-image: linear-gradient(
+    45deg,
+    #513c80 5%,
+    #723557 30%,
+    #3c0541 40%,
+    transparent 60%
+  );
   background-position: 100%;
   background-size: 400%;
   -webkit-transition: background 500ms ease-in-out;
@@ -182,7 +188,7 @@ button:hover {
 
 .meusprojetosbutton:hover {
   background-position: 0;
-  color: rgb(240, 196, 3);
+  color: WHITE;
   box-shadow: 0 5px 0 #210324;
 }
 
@@ -246,9 +252,9 @@ button:hover {
   color: black;
   background-image: linear-gradient(
     45deg,
-    #ffdc7d 10%,
-    #f46f30 20%,
-    #7232bd 30%,
+    #ffdc7d 5%,
+    #f46f30 10%,
+    #7232bd 20%,
     #4c5fd7 40%,
     #c32aa3 50%,
     transparent 60%

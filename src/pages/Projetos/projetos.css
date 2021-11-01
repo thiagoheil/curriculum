@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: purple;
+}
+
 /*====================================== MAIN ======================================*/
 
 main {
@@ -10,6 +14,11 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.mainProjects {
+  background-image: linear-gradient(180deg, #3c0541, #65086eb9);
+  height: 100vh;
 }
 
 .backMainPanel {
@@ -59,4 +68,119 @@ main {
 .projectButton {
   margin: 2rem 1rem 1rem 1rem;
   height: 120px;
+}
+
+.glow-on-hover {
+  border: 2px solid black;
+  outline: none;
+  color: #black;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+  font-weight: 500;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#sgurd-website {
+  border: 2px solid white;
+  background-image: linear-gradient(
+    75deg,
+    rgb(156, 11, 11),
+    rgb(80, 7, 7),
+    rgb(90, 15, 15),
+    rgb(110, 14, 14)
+  );
+  color: white;
+  transition-duration: 0.2s;
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+#sgurd-website:hover {
+  background-position: 0;
+  color: white;
+  box-shadow: 0 5px 0 rgb(243, 243, 243);
+}
+
+#sgurd-website:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
