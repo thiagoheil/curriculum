@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.App-logo {
+  height: 120px;
+  pointer-events: none;
+  border-radius: 50%;
+  margin-top: 20px;
+  padding-bottom: -30px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: black;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header-p {
+  font-weight: 100;
+}
+
+.botao-youtube {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.div-p {
+  width: 800px;
+  height: 400px;
+  margin: 0 20px 0 20px;
+  font-size: 15px;
+}
+
+.oqe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: red;
+  height: 570px;
+  width: 600px;
+  border-radius: 20px;
+  color: white;
+}
+
+.h1oqe {
+  width: 100%;
+}
+
+.main {
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-top: 22px;
+  align-items: center;
+}
+
+.footer {
+  color: white;
+  height: 120px;
+  background-color: red;
+}
+
+.div-contato {
+  margin-bottom: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  line-height: 10px;
+}
+
+.galeria-arte {
+  background-image: url(./img/tag01.png);
+  height: 598px;
+  width: 1000px;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  margin-top: 10px;
+  border-radius: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.galeria-arte:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.h2-galeria {
+  color: white;
+  position: static;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.fundo-galeria {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
