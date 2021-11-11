@@ -1,0 +1,49 @@
+.backgroundCrack {
+  background-color: rgb(45, 5, 83);
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nextLevelScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 40px;
+}
+
+.backgroundCrack select {
+  margin-top: 1rem;
+
+  border-radius: 0.3rem;
+  font-size: 18px;
+
+  width: 200px;
+  height: 50px;
+}
+
+.invisibleButton {
+  background-color: transparent;
+  border: none;
+  color: transparent;
+
+  margin-top: 5rem;
+  transition-duration: 5s;
+}
+
+.invisibleButton:hover {
+  background-color: aqua;
+  border: 2px solid black;
+  color: black;
+}
+
+.returnButton {
+  height: 40px;
+  width: 100px;
+  margin-bottom: 3rem;
+}

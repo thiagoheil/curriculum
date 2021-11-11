@@ -184,3 +184,65 @@ main {
     background-position: 0% 50%;
   }
 }
+/* 
+#calculadoraButton {
+  border: 2px solid #0d021a;
+  background-image: radial-gradient(#0d021a, #331b4d);
+  background-size: 100% 100%;
+  color: red;
+} */
+
+#calculadoraButton {
+  border: 2px solid #0d021a;
+  background-image: linear-gradient(75deg, #0d021a, #331b4d);
+  color: white;
+  transition-duration: 0.2s;
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+#calculadoraButton:hover {
+  background-position: 0;
+  color: white;
+  box-shadow: 0 5px 0 #0d021a;
+}
+
+#calculadoraButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
+}
+
+#calculadoraGorjeta {
+  border: 2px solid #c5e4e7;
+  background-image: linear-gradient(75deg, #52a9e4, #c5e4e7, #2abac7);
+  color: black;
+  transition-duration: 0.2s;
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+#calculadoraGorjeta:hover {
+  background-position: 0;
+  box-shadow: 0 5px 0 #c5e4e7;
+}
+#calculadoraGorjeta:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
+}
+
+#chuckNorrisButton {
+  border: 2px solid white;
+  background-image: url(./projects/chucknorris/img/chuck.jpg);
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
+  background-size: 110%;
+  transition-duration: 0.2s;
+}
+#chuckNorrisButton:hover {
+  background-position: 0;
+  box-shadow: 0 5px 0 #ffffff;
+}
+#chuckNorrisButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
+}

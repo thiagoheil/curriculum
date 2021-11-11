@@ -192,23 +192,6 @@ button:hover {
   box-shadow: 0 5px 0 #210324;
 }
 
-/* .meusprojetosbutton {
-  border: solid 2px #085827;
-  color: black;
-
-  background-image: linear-gradient(45deg, #085827 40%, transparent 60%);
-  background-position: 100%;
-  background-size: 400%;
-  -webkit-transition: background 500ms ease-in-out;
-  transition: background 500ms ease-in-out;
-}
-
-.meusprojetosbutton:hover {
-  background-position: 0;
-  color: rgb(255, 255, 255);
-  box-shadow: 0 5px 0 #03200e;
-} */
-
 .meusprojetosbutton:active {
   transform: translateY(2px);
   box-shadow: 0 0px 0;

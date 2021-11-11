@@ -1,0 +1,62 @@
+.enterPassword {
+  background-color: rgb(45, 5, 83);
+  height: 400px;
+  width: 400px;
+  border-radius: 0.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  transition-duration: 0.2s;
+}
+
+.enterPassword:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px black;
+}
+
+.enterPassword button {
+  height: 50px;
+  width: 120px;
+
+  margin-top: 3rem;
+}
+
+.enterPassword button:hover {
+  background-color: #067c35;
+
+  font-size: 19px;
+}
+
+.enterPassword input {
+  background-color: #067c35;
+  border: 0;
+  border-radius: 0.5rem;
+
+  height: 80px;
+  width: 300px;
+
+  text-align: center;
+  font-size: 24px;
+}
+
+.enterPassword input:focus {
+  outline: 2px solid #4aec8b79;
+}
+
+.enterPassword ::placeholder {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+}
+
+.enterPassword label {
+  margin-bottom: 0.5rem;
+  color: #4aec8c;
+}
+
+.crackButtons button {
+  margin: 50px 10px 10px 10px;
+}
