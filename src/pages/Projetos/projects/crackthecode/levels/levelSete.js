@@ -1,22 +1,23 @@
 import React from "react";
 
 import { useState } from "react";
+
+import Congrats from "../components/congrats";
+import NextLevelButton from "../components/nextlevelbutton";
+import Seventh from "../components/seventh";
+
 import { toast, Toaster } from "react-hot-toast";
 
-import Third from "../components/third";
-import NextLevelButton from "../components/nextlevelbutton";
-import Congrats from "../components/congrats";
-
-const LevelTres = () => {
-  document.title = "Crack The Code | 3";
+const LevelSete = () => {
+  document.title = "Crack The Code | 7";
 
   const [password, setPassword] = useState("");
   const [validaPassword, setValidaPassword] = useState(false);
 
   const checkPassword = () => {
-    if (password === "sgurd") {
-      setValidaPassword(true);
+    if (password === "aliens") {
       toast.success("Congrats");
+      setValidaPassword(true);
     } else {
       toast.error("Invalid Password");
     }
@@ -24,19 +25,19 @@ const LevelTres = () => {
 
   return (
     <>
-      <div className="backgroundCrack">
+      <div className="backgroundCrackMedium">
         {validaPassword ? (
           <div className="nextLevelScreen">
             <Congrats />
             <NextLevelButton
-              nextlevelhistory={"/projetos/crack-the-code/level-4"}
+              nextlevelhistory={"/projetos/crack-the-code/level-8"}
             />
           </div>
         ) : (
-          <Third
+          <Seventh
             placeholder={"Password"}
-            setPassword={setPassword}
             checkPassword={checkPassword}
+            setPassword={setPassword}
           />
         )}
       </div>
@@ -45,4 +46,4 @@ const LevelTres = () => {
   );
 };
 
-export default LevelTres;
+export default LevelSete;

@@ -14,7 +14,7 @@ const Second = ({ setPassword, checkPassword, placeholder }) => {
         <input
           type="text"
           placeholder={placeholder}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value.toLowerCase())}
         ></input>
         <div className="crackButtons">
           <button onClick={checkPassword}>SUBMIT</button>

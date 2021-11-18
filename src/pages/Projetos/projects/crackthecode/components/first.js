@@ -11,6 +11,7 @@ const First = ({ setPassword, placeholder, checkPassword }) => {
   return (
     <>
       <div className="enterPassword">
+        <h2>LEVEL 1</h2>
         <label>Enter the password</label>
         <input
           type="text"

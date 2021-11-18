@@ -10,6 +10,8 @@ import NextLevelButton from "./components/nextlevelbutton";
 import { Toaster, toast } from "react-hot-toast";
 
 const CrackTheCode = () => {
+  document.title = "Crack The Code | 1";
+
   const [password, setPassword] = useState("");
   const [validaSenha, setValidaSenha] = useState(false);
 

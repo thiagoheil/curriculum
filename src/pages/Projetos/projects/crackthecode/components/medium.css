@@ -1,0 +1,58 @@
+.enterPasswordMedium {
+  background-color: rgb(218, 195, 69);
+  height: 400px;
+  width: 400px;
+  border-radius: 0.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  transition-duration: 0.2s;
+}
+
+.enterPasswordMedium:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px black;
+}
+
+.enterPasswordMedium button {
+  height: 50px;
+  width: 120px;
+
+  margin-top: 3rem;
+}
+
+.enterPasswordMedium button:hover {
+  background-color: #2d0553;
+
+  font-size: 19px;
+}
+
+.enterPasswordMedium input {
+  background-color: #2d0553;
+  border: 0;
+  border-radius: 0.5rem;
+
+  height: 80px;
+  width: 300px;
+
+  text-align: center;
+  font-size: 24px;
+}
+
+.enterPasswordMedium input:focus {
+  outline: 2px solid #2d0553;
+}
+
+.enterPasswordMedium ::placeholder {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+}
+
+.enterPasswordMedium label {
+  margin-bottom: 0.5rem;
+  color: #2d0553;
+}

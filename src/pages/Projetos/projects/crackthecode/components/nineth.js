@@ -1,20 +1,21 @@
 import React from "react";
 import toast from "react-hot-toast";
 
-const Third = ({ checkPassword, placeholder, setPassword }) => {
+const Nineth = ({ placeholder, setPassword, checkPassword }) => {
   const hint = () => {
-    toast.success("Three eyes, always watching");
+    toast.success("HINT");
   };
+
   return (
     <>
-      <div className="enterPassword">
-        <h2>LEVEL 3</h2>
+      <div className="enterPasswordMedium">
+        <h2>LEVEL 9</h2>
         <label>Enter Password:</label>
         <input
           type="text"
           placeholder={placeholder}
           onChange={(e) => setPassword(e.target.value.toLowerCase())}
-        ></input>
+        />
         <div className="crackButtons">
           <button onClick={checkPassword}>SUBMIT</button>
           <button onClick={hint}>HINT</button>
@@ -24,4 +25,4 @@ const Third = ({ checkPassword, placeholder, setPassword }) => {
   );
 };
 
-export default Third;
+export default Nineth;

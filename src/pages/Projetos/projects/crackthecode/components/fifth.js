@@ -1,19 +1,22 @@
 import React from "react";
 import toast from "react-hot-toast";
 
-const Third = ({ checkPassword, placeholder, setPassword }) => {
+import "./medium.css";
+
+const Fifth = ({ checkPassword, setPassword, placeholder }) => {
   const hint = () => {
-    toast.success("Three eyes, always watching");
+    toast.success(`000 000 27° 59' 17" N 86° 55' 31" E`);
   };
+
   return (
     <>
-      <div className="enterPassword">
-        <h2>LEVEL 3</h2>
+      <div className="enterPasswordMedium">
+        <h2>LEVEL 5</h2>
         <label>Enter Password:</label>
         <input
-          type="text"
           placeholder={placeholder}
           onChange={(e) => setPassword(e.target.value.toLowerCase())}
+          type="text"
         ></input>
         <div className="crackButtons">
           <button onClick={checkPassword}>SUBMIT</button>
@@ -24,4 +27,4 @@ const Third = ({ checkPassword, placeholder, setPassword }) => {
   );
 };
 
-export default Third;
+export default Fifth;

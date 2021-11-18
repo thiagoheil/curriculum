@@ -1,47 +1,48 @@
 import React from "react";
-import { useState } from "react";
-import { toast, Toaster } from "react-hot-toast";
 
-import Second from "../components/second";
+import { useState } from "react";
+
 import Congrats from "../components/congrats";
 import NextLevelButton from "../components/nextlevelbutton";
+import Fifth from "../components/fifth";
+import { toast, Toaster } from "react-hot-toast";
 
-const LevelDois = () => {
-  document.title = "Crack The Code | 2";
+const LevelCinco = () => {
+  document.title = "Crack The Code | 5";
 
   const [password, setPassword] = useState("");
-  const [validaSenha, setValidaSenha] = useState(false);
+  const [validaPassword, setValidaPassword] = useState(false);
 
   const checkPassword = () => {
-    if (password === "none") {
-      setValidaSenha(true);
+    if (password === "everest") {
+      setValidaPassword(true);
       toast.success("Congrats");
     } else {
-      toast.error("Wrong password!");
+      toast.error("Invalid Password");
     }
   };
 
   return (
     <>
-      <div className="backgroundCrack">
-        {validaSenha ? (
+      <div className="backgroundCrackMedium">
+        {validaPassword ? (
           <div className="nextLevelScreen">
             <Congrats />
             <NextLevelButton
-              nextlevelhistory={"/projetos/crack-the-code/level-3"}
+              nextlevelhistory={"/projetos/crack-the-code/level-6"}
             />
           </div>
         ) : (
-          <Second
+          <Fifth
             placeholder={"Password"}
             setPassword={setPassword}
             checkPassword={checkPassword}
           />
         )}
       </div>
-      <Toaster position="bottom-right" reverseOrder={true} />
+      <Toaster position="bottom-right" reverseOrder={false} />
     </>
   );
 };
 
-export default LevelDois;
+export default LevelCinco;
