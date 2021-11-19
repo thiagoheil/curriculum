@@ -18,6 +18,7 @@ import LevelSeis from "./pages/Projetos/projects/crackthecode/levels/levelSeis";
 import LevelSete from "./pages/Projetos/projects/crackthecode/levels/levelSete";
 import LevelOito from "./pages/Projetos/projects/crackthecode/levels/levelOito";
 import LevelNove from "./pages/Projetos/projects/crackthecode/levels/levelNove";
+import LevelDez from "./pages/Projetos/projects/crackthecode/levels/levelDez";
 
 function Routes() {
   return (
@@ -90,6 +91,11 @@ function Routes() {
           path="/projetos/crack-the-code/level-9"
           exact
           render={() => <LevelNove />}
+        />
+        <Route
+          path="/projetos/crack-the-code/level-10"
+          exact
+          render={() => <LevelDez />}
         />
       </Switch>
     </Router>

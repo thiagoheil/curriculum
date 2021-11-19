@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "../components/hard.css";
 
 import { useState } from "react";
 import { toast, Toaster } from "react-hot-toast";
+import { useHistory } from "react-router-dom";
 
 import Congrats from "../components/congrats";
-import NextLevelButton from "../components/nextlevelbutton";
-import Nineth from "../components/nineth";
+import Tenth from "../components/tenth";
 
-const LevelNove = () => {
-  document.title = "Crack The Code | 9";
+const LevelDez = () => {
+  document.title = "Crack The Code | 10";
 
   const [password, setPassword] = useState("");
   const [validaPassword, setValidaPassword] = useState(false);
 
+  let history = useHistory();
+
+  const finish = () => {
+    history.push("/");
+  };
+
   const checkPassword = () => {
-    if (password === "tijuana") {
-      toast.success("Congrats");
+    if (password === "terminator") {
+      toast("Congrats!", {
+        icon: "🎂",
+      });
       setValidaPassword(true);
     } else {
       toast.error("Invalid Password");
@@ -24,16 +33,14 @@ const LevelNove = () => {
 
   return (
     <>
-      <div className="backgroundCrackMedium">
+      <div className="backgroundCrackHard">
         {validaPassword ? (
           <div className="nextLevelScreen">
             <Congrats />
-            <NextLevelButton
-              nextlevelhistory={"/projetos/crack-the-code/level-10"}
-            />
+            <button onClick={finish}>FINISH</button>
           </div>
         ) : (
-          <Nineth
+          <Tenth
             placeholder={"Password"}
             checkPassword={checkPassword}
             setPassword={setPassword}
@@ -45,4 +52,4 @@ const LevelNove = () => {
   );
 };
 
-export default LevelNove;
+export default LevelDez;

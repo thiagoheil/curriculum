@@ -246,3 +246,23 @@ main {
   transform: translateY(2px);
   box-shadow: 0 0px 0;
 }
+
+#crackTheCodeButton {
+  background-image: url(./projects/img/codes.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+
+  color: white;
+  border: 2px solid white;
+  transition-duration: 0.2s;
+}
+
+#crackTheCodeButton:hover {
+  background-position: 0;
+  box-shadow: 0 5px 0 #ffffff;
+}
+
+#crackTheCodeButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
+}

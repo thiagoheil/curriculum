@@ -18,6 +18,16 @@
   flex-direction: column;
 }
 
+.backgroundCrackHard {
+  background-color: #910303;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .nextLevelScreen {
   display: flex;
   justify-content: center;

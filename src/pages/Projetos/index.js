@@ -65,7 +65,11 @@ const Projetos = () => {
                 >
                   CALCULADORA DE GORJETA
                 </button>
-                <button onClick={codeRedirect} className="projectButton">
+                <button
+                  onClick={codeRedirect}
+                  className="projectButton"
+                  id="crackTheCodeButton"
+                >
                   CRACK THE CODE
                 </button>
                 <button
