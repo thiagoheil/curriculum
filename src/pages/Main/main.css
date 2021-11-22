@@ -574,13 +574,6 @@ button:hover {
   }
 }
 
-@media (min-width: 540px) {
-  .div-botoes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (max-width: 540px) {
   .div-botoes {
     display: grid;
