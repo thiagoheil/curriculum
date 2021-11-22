@@ -341,7 +341,51 @@ button:hover {
 
 /* ========================= RESPONSIVE ================== */
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .imgThiago {
+    margin-left: 5rem;
+  }
+
+  .cardThiago {
+    margin: 0;
+    margin-left: 2.6rem;
+  }
+
+  .h2Thiago {
+    font-size: 30px;
+    margin-left: 2.5rem;
+  }
+
+  .jobthiago {
+    margin-left: 5rem;
+    font-size: 21px;
+  }
+
+  .div-botoes {
+    padding: 0;
+    width: 90%;
+  }
+
+  .div-botoes button {
+    width: 200px;
+    margin: 10px;
+  }
+
+  .exp {
+    height: 380px;
+  }
+
+  .quemsou {
+    height: 600px;
+  }
+
+  .paipe h2 {
+    font-size: 22px;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 768px) {
   .background2 {
     display: flex;
     justify-content: top;
@@ -353,6 +397,11 @@ button:hover {
     border-radius: 0.4rem;
     border: 4px solid linear-gradient(90deg, #ffffff);
     animation: gradient 15s ease infinite;
+  }
+
+  .imgThiago {
+    margin: 0;
+    margin-left: 1rem;
   }
 
   .background1 {
@@ -416,7 +465,13 @@ button:hover {
     height: 600px;
   }
 
-  .background2 {
+  .exp {
+    height: 380px;
+  }
+
+  .paipe-text h2 {
+    margin-top: 3px;
+    font-size: 22px;
   }
 }
 
@@ -505,153 +560,223 @@ button:hover {
   .exp {
     height: 500px;
   }
+}
 
-  @media (max-width: 375px) {
-    main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2000px;
-    }
-
-    .background2 {
-      display: flex;
-      justify-content: top;
-      align-items: center;
-      flex-direction: column;
-      width: 90%;
-      background-color: white;
-      height: 1800px;
-      border-radius: 0.4rem;
-      border: 4px solid linear-gradient(90deg, #ffffff);
-      animation: gradient 15s ease infinite;
-    }
-
-    .background1 {
-      display: flex;
-      flex-direction: column;
-      height: 400px;
-    }
-
-    .cardThiago {
-      margin-left: 1.2rem;
-    }
-
-    .imgThiago {
-      height: 180px;
-      margin-left: -2.5rem;
-    }
-
-    .tag {
-      display: flex;
-      flex-direction: column;
-      align-items: bottom;
-
-      color: white;
-      padding-top: srem;
-    }
-
-    .tag h1,
-    h3 {
-      margin: 3px;
-    }
-
-    .divheader {
-      margin-top: -9rem;
-      margin-left: 6rem;
-    }
-
-    .h2Thiago {
-      color: white;
-      font-size: 19px;
-      margin: 1.5rem 0 0 -1rem;
-    }
-
-    .textnome {
-      margin-left: -3.3rem;
-    }
-
-    .jobthiago {
-      color: white;
-      font-weight: 100;
-      margin: 0 0 1.5rem 0rem;
-      font-size: 14px;
-    }
-
-    .quemsou {
-      background-color: var(--fundo-black);
-      border-radius: 0.4rem;
-
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-
-      width: 90%;
-      height: 700px;
-    }
-
-    .quemsou p {
-      font-size: 14px;
-    }
-
-    .exp {
-      height: 480px;
-    }
-
-    .img-paipe {
-      width: 80px;
-      height: 80px;
-    }
-
-    .img-next {
-      width: 80px;
-      height: 80px;
-    }
-
-    .paipe {
-      margin-left: 1.5rem;
-    }
-
-    .paipe-text h2 {
-      font-size: 20px;
-    }
-
-    .paipe-text h3 {
-      font-size: 15px;
-    }
-
-    .next {
-      margin-left: 1.5rem;
-    }
-
-    .next-text h2 {
-      font-size: 20px;
-    }
-
-    .next-text h3 {
-      font-size: 15px;
-    }
-
-    .div-botoes {
-      width: 80%;
-    }
+@media (max-width: 375px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2000px;
   }
 
-  @media (max-width: 360px) {
-    .imgThiago {
-      margin-left: -3.3rem;
-    }
+  .background2 {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: white;
+    height: 1800px;
+    border-radius: 0.4rem;
+    border: 4px solid linear-gradient(90deg, #ffffff);
+    animation: gradient 15s ease infinite;
+  }
 
-    .h2Thiago {
-      font-size: 18px;
-      margin-left: -1.6rem;
-    }
+  .background1 {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
 
-    .jobthiago {
-      margin-left: -1rem;
-    }
+  .cardThiago {
+    margin-left: 1.2rem;
+  }
 
-    .div-botoes {
-      padding: 1rem 2rem 1rem 1rem;
-    }
+  .imgThiago {
+    height: 180px;
+    margin-left: -2.5rem;
+  }
+
+  .tag {
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+
+    color: white;
+    padding-top: srem;
+  }
+
+  .tag h1,
+  h3 {
+    margin: 3px;
+  }
+
+  .divheader {
+    margin-top: -9rem;
+    margin-left: 6rem;
+  }
+
+  .h2Thiago {
+    color: white;
+    font-size: 19px;
+    margin: 1.5rem 0 0 -1rem;
+  }
+
+  .textnome {
+    margin-left: -3.3rem;
+  }
+
+  .jobthiago {
+    color: white;
+    font-weight: 100;
+    margin: 0 0 1.5rem 0rem;
+    font-size: 14px;
+  }
+
+  .quemsou {
+    background-color: var(--fundo-black);
+    border-radius: 0.4rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    width: 90%;
+    height: 700px;
+  }
+
+  .quemsou p {
+    font-size: 14px;
+  }
+
+  .exp {
+    height: 480px;
+  }
+
+  .img-paipe {
+    width: 80px;
+    height: 80px;
+  }
+
+  .img-next {
+    width: 80px;
+    height: 80px;
+  }
+
+  .paipe {
+    margin-left: 1.5rem;
+  }
+
+  .paipe-text h2 {
+    font-size: 20px;
+  }
+
+  .paipe-text h3 {
+    font-size: 15px;
+  }
+
+  .next {
+    margin-left: 1.5rem;
+  }
+
+  .next-text h2 {
+    font-size: 20px;
+  }
+
+  .next-text h3 {
+    font-size: 15px;
+  }
+
+  .div-botoes {
+    width: 75%;
+  }
+}
+
+@media (max-width: 375px) {
+  .cardThiago {
+    height: 13rem;
+  }
+
+  .imgThiago {
+    margin-left: -2.5rem;
+  }
+
+  .h2Thiago {
+    font-size: 18px;
+    margin-left: -0.8rem;
+  }
+
+  .jobthiago {
+    margin-left: -0.3rem;
+  }
+
+  .div-botoes {
+    padding: 1rem 2rem 1rem 1rem;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .div-botoes button {
+    width: 130px;
+    margin: 2px;
+  }
+
+  .exp {
+    height: 500px;
+  }
+
+  .quemsou {
+    height: 600px;
+  }
+}
+
+@media (max-width: 320px) {
+  .imgThiago {
+    margin-left: -3.7rem;
+  }
+
+  .cardThiago {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 13rem;
+  }
+
+  .h2Thiago {
+    font-size: 18px;
+    margin-left: -2rem;
+  }
+
+  .jobthiago {
+    font-size: 14px;
+    margin-left: -1.3rem;
+  }
+
+  .div-botoes {
+    padding: 0;
+    width: 90%;
+  }
+
+  .div-botoes button {
+    width: 120px;
+    margin: 3px;
+  }
+
+  .exp {
+    height: 600px;
+  }
+
+  .quemsou {
+    height: 700px;
+  }
+
+  .paipe h2 {
+    font-size: 18px;
+    margin-top: 4px;
+  }
+
+  .background2 {
+    height: 1900px;
   }
 }

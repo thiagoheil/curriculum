@@ -92,8 +92,8 @@ const Main = () => {
               <img src={paipe} alt="Logo da paipe" className="img-paipe"></img>
               <div className="paipe-text">
                 <h2>Paipe | Tecnologia e Informação</h2>
-                <h3>Ingresso em Agosto de 2021</h3>
-                <h3>Quality Assurance</h3>
+                <h3>Agosto de 2021/Atuante</h3>
+                <h3>Desenvolvedor Front-End</h3>
               </div>
             </div>
 
