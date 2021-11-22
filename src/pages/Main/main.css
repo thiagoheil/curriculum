@@ -341,6 +341,18 @@ button:hover {
 
 /* ========================= RESPONSIVE ================== */
 
+@media (min-width: 1280px) {
+  .exp {
+    height: 380px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .exp {
+    height: 380px;
+  }
+}
+
 @media (max-width: 1024px) {
   .imgThiago {
     margin-left: 5rem;
@@ -562,6 +574,98 @@ button:hover {
   }
 }
 
+@media (max-width: 540px) {
+  .div-botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardThiago {
+    height: 13rem;
+  }
+
+  .imgThiago {
+    margin-left: 0;
+  }
+
+  .paipe {
+    margin-left: 1rem;
+  }
+
+  .next {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .imgThiago {
+    margin-left: -3.3rem;
+  }
+
+  .cardThiago {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1.4rem;
+    height: 13rem;
+  }
+
+  .h2Thiago {
+    font-size: 22px;
+    margin-left: -1rem;
+  }
+
+  .jobthiago {
+    font-size: 15px;
+    margin-left: 1rem;
+  }
+
+  .div-botoes {
+    padding: 1rem 2rem 1rem 1rem;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 78%;
+  }
+
+  .div-botoes button {
+    width: 150px;
+    margin: 3px;
+  }
+
+  .exp {
+    height: 600px;
+  }
+
+  .quemsou {
+    height: 900px;
+  }
+
+  .paipe h2 {
+    font-size: 18px;
+    margin-top: 4px;
+  }
+
+  .paipe {
+    margin-left: 1rem;
+  }
+
+  .next {
+    margin-left: 1rem;
+  }
+
+  .background2 {
+    height: 2150px;
+  }
+
+  main {
+    height: 2230px;
+  }
+
+  .exp {
+    height: 520px;
+  }
+}
+
 @media (max-width: 375px) {
   main {
     display: flex;
@@ -776,7 +880,102 @@ button:hover {
     margin-top: 4px;
   }
 
+  .paipe {
+    margin-left: 1rem;
+  }
+
+  .next {
+    margin-left: 1rem;
+  }
+
   .background2 {
     height: 1900px;
+  }
+
+  .exp {
+    height: 500px;
+  }
+}
+
+@media (max-width: 280px) {
+  .imgThiago {
+    height: 150px;
+    margin-top: 1rem;
+    margin-left: -4rem;
+  }
+
+  .cardThiago {
+    height: 11rem;
+    margin-left: 0.8rem;
+  }
+
+  .h2Thiago {
+    font-size: 15px;
+  }
+
+  .jobthiago {
+    font-size: 11px;
+    margin-left: -1.3rem;
+  }
+
+  .background1 {
+    height: 300px;
+  }
+
+  .div-botoes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .div-botoes button {
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+  }
+
+  .quemsou {
+    height: 700px;
+  }
+
+  .quemsou p {
+    margin: 2rem 1rem 2rem 1rem;
+  }
+
+  .exp {
+    height: 450px;
+  }
+
+  .background2 {
+    height: 1800px;
+  }
+
+  .paipe img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .next img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .paipe h2 {
+    font-size: 14px;
+  }
+
+  .paipe h3 {
+    font-size: 12px;
+  }
+
+  .next h2 {
+    font-size: 14px;
+  }
+
+  .next h3 {
+    font-size: 12px;
+  }
+
+  main {
+    height: 1850px;
   }
 }
