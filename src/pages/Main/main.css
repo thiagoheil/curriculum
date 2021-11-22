@@ -495,6 +495,11 @@ button:hover {
     height: 2000px;
   }
 
+  .div-botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .background2 {
     display: flex;
     justify-content: top;
@@ -666,12 +671,80 @@ button:hover {
   }
 }
 
+@media (max-width: 400px) {
+  .imgThiago {
+    margin-left: -3.7rem;
+  }
+
+  .h2Thiago {
+    margin-left: -2rem;
+  }
+
+  .jobthiago {
+    margin-left: 0;
+  }
+
+  .div-botoes button {
+    margin: 0;
+    width: 150px;
+  }
+
+  .quemsou {
+    height: 1000px;
+  }
+
+  .background2 {
+    height: 2250px;
+  }
+
+  .main {
+    height: 2400px;
+  }
+}
+
 @media (max-width: 375px) {
   main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 2000px;
+  }
+
+  .cardThiago {
+    height: 13rem;
+  }
+
+  .imgThiago {
+    margin-left: -2.5rem;
+  }
+
+  .h2Thiago {
+    font-size: 18px;
+    margin-left: -0.8rem;
+  }
+
+  .jobthiago {
+    margin-left: -0.3rem;
+  }
+
+  .div-botoes {
+    padding: 1rem 2rem 1rem 1rem;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .div-botoes button {
+    width: 130px;
+    margin: 2px;
+  }
+
+  .exp {
+    height: 500px;
+  }
+
+  .quemsou {
+    height: 600px;
   }
 
   .background2 {
@@ -793,45 +866,6 @@ button:hover {
 
   .div-botoes {
     width: 75%;
-  }
-}
-
-@media (max-width: 375px) {
-  .cardThiago {
-    height: 13rem;
-  }
-
-  .imgThiago {
-    margin-left: -2.5rem;
-  }
-
-  .h2Thiago {
-    font-size: 18px;
-    margin-left: -0.8rem;
-  }
-
-  .jobthiago {
-    margin-left: -0.3rem;
-  }
-
-  .div-botoes {
-    padding: 1rem 2rem 1rem 1rem;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .div-botoes button {
-    width: 130px;
-    margin: 2px;
-  }
-
-  .exp {
-    height: 500px;
-  }
-
-  .quemsou {
-    height: 600px;
   }
 }
 
