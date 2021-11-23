@@ -30,6 +30,10 @@ const Projetos = () => {
     history.push("/projetos/chucknorris");
   }
 
+  const crudSystem = () => {
+    history.push("/projetos/crud-system");
+  };
+
   return (
     <>
       <main className="mainProjects">
@@ -79,7 +83,13 @@ const Projetos = () => {
                 >
                   CHUCK NORRIS JOKES
                 </button>
-                <button className="projectButton">PROJETO 7</button>
+                <button
+                  className="projectButton"
+                  id="crudSystemButton"
+                  onClick={crudSystem}
+                >
+                  CRUD SYSTEM
+                </button>
                 <button className="projectButton">PROJETO 8</button>
               </div>
             </div>

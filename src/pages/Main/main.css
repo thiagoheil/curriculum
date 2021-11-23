@@ -600,6 +600,10 @@ button:hover {
   .next {
     margin-left: 1rem;
   }
+
+  .background2 {
+    height: 2100px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -642,7 +646,8 @@ button:hover {
   }
 
   .quemsou {
-    height: 900px;
+    height: 950px;
+    font-size: 15px;
   }
 
   .paipe h2 {
@@ -659,11 +664,11 @@ button:hover {
   }
 
   .background2 {
-    height: 2150px;
+    height: 2230px;
   }
 
   main {
-    height: 2230px;
+    height: 2150px;
   }
 
   .exp {
@@ -694,7 +699,7 @@ button:hover {
   }
 
   .background2 {
-    height: 2250px;
+    height: 2260px;
   }
 
   .main {

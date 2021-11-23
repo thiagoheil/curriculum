@@ -20,6 +20,9 @@ import LevelOito from "./pages/Projetos/projects/crackthecode/levels/levelOito";
 import LevelNove from "./pages/Projetos/projects/crackthecode/levels/levelNove";
 import LevelDez from "./pages/Projetos/projects/crackthecode/levels/levelDez";
 
+import CrudSystem from "./pages/Projetos/projects/crudsystem/crudsystem";
+import CrudSystemProgram from "./pages/Projetos/projects/crudsystem/crudSystemProgram";
+
 function Routes() {
   return (
     <Router>
@@ -96,6 +99,16 @@ function Routes() {
           path="/projetos/crack-the-code/level-10"
           exact
           render={() => <LevelDez />}
+        />
+        <Route
+          path="/projetos/crud-system"
+          exact
+          render={() => <CrudSystem />}
+        />
+        <Route
+          path="/projetos/crud-system/start"
+          exact
+          render={() => <CrudSystemProgram />}
         />
       </Switch>
     </Router>
