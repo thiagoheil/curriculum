@@ -88,7 +88,7 @@
 
 /*=============================MODAL=============================*/
 
-.modalSobre {
+.modalBackground {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -103,6 +103,36 @@
 }
 
 .modalSobrePanel {
+  background-color: whitesmoke;
+  height: 400px;
+  width: 500px;
+
+  border-radius: 10px;
+
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalAddClientePanel {
+  background-color: whitesmoke;
+  height: 400px;
+  width: 500px;
+
+  border-radius: 10px;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalAddProdutoPanel {
   background-color: whitesmoke;
   height: 400px;
   width: 500px;
@@ -141,4 +171,64 @@
   background-color: #744fc6;
   border: 1px solid #4fb0c6;
   cursor: pointer;
+}
+
+/*=============================ADD CLIENTES/PRODUTOS FORM=============================*/
+
+.addClienteForm {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.addClienteForm input {
+  width: 250px;
+  height: 35px;
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+
+  background-color: #4fb0c6;
+}
+
+.addClienteForm input:focus {
+  outline: none;
+}
+
+.addClienteForm input::placeholder {
+  text-align: center;
+}
+
+.botoesAddCrud {
+  margin-top: 15px;
+}
+
+.botoesAddCrud button {
+  width: 130px;
+  height: 50px;
+  margin: 5px;
+}
+
+.addProdutoForm {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.addProdutoForm input {
+  width: 250px;
+  height: 35px;
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+
+  background-color: #4fb0c6;
+}
+
+.addProdutoForm input:focus {
+  outline: none;
+}
+
+.addProdutoForm input::placeholder {
+  text-align: center;
 }
