@@ -1,6 +1,6 @@
 import React from "react";
 
-const CrudProduts = () => {
+const CrudProduts = ({ items }) => {
   return (
     <>
       <div>
@@ -12,13 +12,16 @@ const CrudProduts = () => {
             <th>Quantidade</th>
             <th>Valor</th>
           </tr>
-          <tr>
-            <td>1</td>
-            <td>Vinho</td>
-            <td>Italia</td>
-            <td>3</td>
-            <td>35,99</td>
-          </tr>
+
+          {items.map((items) => (
+            <tr>
+              <td>{items.id}</td>
+              <td>{items.nomeProduto}</td>
+              <td>{items.fabricacaoProduto}</td>
+              <td>{items.quantidadeProduto}</td>
+              <td>{items.valorProduto}</td>
+            </tr>
+          ))}
         </table>
       </div>
     </>

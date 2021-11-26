@@ -2,7 +2,7 @@ import React from "react";
 
 import "../crud.css";
 
-const CrudClients = () => {
+const CrudClients = ({ clientes }) => {
   return (
     <>
       <div>
@@ -15,14 +15,16 @@ const CrudClients = () => {
             <th>Celular</th>
             <th>Endereço</th>
           </tr>
-          <tr>
-            <td>1</td>
-            <td>Cleber Eduardo Koch</td>
-            <td>25/03/1986</td>
-            <td>053.385.953-20</td>
-            <td>(51) 99766-4432</td>
-            <td>Rua João Inácio, 135</td>
-          </tr>
+          {clientes.map((clientes) => (
+            <tr>
+              <td>{clientes.id}</td>
+              <td>{clientes.nomeCliente}</td>
+              <td>{clientes.nascimento}</td>
+              <td>{clientes.cpfCliente}</td>
+              <td>{clientes.celularCliente}</td>
+              <td>{clientes.enderecoCliente}</td>
+            </tr>
+          ))}
         </table>
       </div>
     </>

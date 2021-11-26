@@ -6,6 +6,10 @@ import { useState } from "react";
 
 import CrudClients from "./components/clientes";
 import CrudProduts from "./components/produtos";
+import ModalAddClient from "./components/modalAddCliente";
+import ModalAddItem from "./components/modalAddItem";
+
+import { capitalizeFirstLetter } from "./utils/utils";
 
 const CrudSystemProgram = () => {
   const [content, setContent] = useState("");
@@ -13,18 +17,52 @@ const CrudSystemProgram = () => {
   const [addCliente, setAddCliente] = useState(false);
   const [addProduto, setAddProduto] = useState(false);
 
-  //VALUES INPUT CLIENTE
-  const [nomeCliente, setNomeCliente] = useState("");
-  const [nascimentoCliente, setNascimentoCliente] = useState("");
-  const [cpfCliente, setCpfCliente] = useState("");
-  const [celularCliente, setCelularCliente] = useState("");
-  const [enderecoCliente, setEnderecoCliente] = useState("");
+  //USESTATE DO CLIENTE E PRODUTO
+  const [clientes, setClientes] = useState([]);
+  const [items, setItems] = useState([]);
 
-  //VALUES INPUT PRODUTO
-  const [nomeProduto, setNomeProduto] = useState("");
-  const [fabricacaoProduto, setFabricacaoProduto] = useState("");
-  const [quantidadeProduto, setQuantidadeProduto] = useState("");
-  const [valorProduto, setValorProduto] = useState("");
+  //ADICIONA NOVO PRODUTO
+  function salvarItem(
+    nomeProduto,
+    fabricacaoProduto,
+    quantidadeProduto,
+    valorProduto
+  ) {
+    const newItem = [
+      ...items,
+      {
+        id: Math.random(999),
+        nomeProduto: nomeProduto,
+        fabricacaoProduto: fabricacaoProduto,
+        quantidadeProduto: quantidadeProduto,
+        valorProduto: valorProduto,
+      },
+    ];
+    setItems(newItem);
+  }
+
+  //ADICIONA NOVO CLIENTE
+  function salvaCliente(
+    nomeCliente,
+    nascimentoCliente,
+    cpfCliente,
+    celularCliente,
+    enderecoCliente
+  ) {
+    const newCliente = [
+      ...clientes,
+      {
+        id: Math.random(999),
+        nomeCliente: nomeCliente,
+        nascimento: nascimentoCliente,
+        cpfCliente: cpfCliente,
+        celularCliente: celularCliente,
+        enderecoCliente: enderecoCliente,
+      },
+    ];
+
+    setClientes(newCliente);
+  }
 
   const pegaProduto = () => {
     setAddProduto(true);
@@ -74,10 +112,10 @@ const CrudSystemProgram = () => {
           </div>
           <div className="crudContent">
             {content === "clientes" ? (
-              <CrudClients />
+              <CrudClients clientes={clientes} />
             ) : <h1 className="crudWelcome">CRUD SYSTEM</h1> &&
               content === "produtos" ? (
-              <CrudProduts />
+              <CrudProduts items={items} />
             ) : (
               <h1 className="crudWelcome">CRUD SYSTEM</h1>
             )}
@@ -94,69 +132,14 @@ const CrudSystemProgram = () => {
         )}
 
         {addProduto && (
-          <div className="modalBackground">
-            <div className="modalAddProdutoPanel">
-              <h2>ADICIONAR PRODUTO</h2>
-              <div>
-                <form className="addProdutoForm">
-                  <input type="text" placeholder="Produto"></input>
-                  <input type="text" placeholder="Fabricação"></input>
-                  <input type="text" placeholder="Quantidade"></input>
-                  <input type="text" placeholder="Valor"></input>
-                </form>
-                <div className="botoesAddCrud">
-                  <button>SALVAR</button>
-                  <button onClick={fechaProduto}>CANCELAR</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ModalAddItem salvarItem={salvarItem} fechaProduto={fechaProduto} />
         )}
 
         {addCliente && (
-          <div className="modalBackground">
-            <div className="modalAddClientePanel">
-              <h2>ADICIONAR CLIENTE</h2>
-              <div>
-                <form className="addClienteForm">
-                  <input
-                    value={nomeCliente}
-                    type="text"
-                    placeholder="Nome"
-                    onChange={(e) => setNomeCliente(e.target.value)}
-                  ></input>
-                  <input
-                    value={nascimentoCliente}
-                    type="text"
-                    placeholder="Nascimento"
-                    onChange={(e) => setNascimentoCliente(e.target.value)}
-                  ></input>
-                  <input
-                    value={cpfCliente}
-                    type="text"
-                    placeholder="CPF"
-                    onChange={(e) => setCpfCliente(e.target.value)}
-                  ></input>
-                  <input
-                    value={celularCliente}
-                    type="text"
-                    placeholder="Celular"
-                    onChange={(e) => setCelularCliente(e.target.value)}
-                  ></input>
-                  <input
-                    value={enderecoCliente}
-                    type="text"
-                    placeholder="Endereço"
-                    onChange={(e) => setEnderecoCliente(e.target.value)}
-                  ></input>
-                </form>
-              </div>
-              <div className="botoesAddCrud">
-                <button>SALVAR</button>
-                <button onClick={fechaCliente}>CANCELAR</button>
-              </div>
-            </div>
-          </div>
+          <ModalAddClient
+            fechaCliente={fechaCliente}
+            salvaCliente={salvaCliente}
+          />
         )}
       </div>
     </>
