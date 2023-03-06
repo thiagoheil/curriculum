@@ -1,26 +1,31 @@
-import eu from "./img/eu.jpg";
-import paipe from "./img/paipe.jfif";
-import next from "./img/next.png";
-import "./main.css";
+import profilePicture from "../../assets/img/thiagoProfile.jpeg";
 import { useHistory } from "react-router-dom";
 
-import { Background, Container, Profile } from "./styles";
+import {
+  Background,
+  Container,
+  Profile,
+  Image,
+  Description,
+  Text,
+  HorizontalLine,
+  Buttons,
+  Button,
+  ProfileDescription,
+  Paragraph,
+  Characteristics,
+  Qualitys,
+  Defects,
+  ProfissionalExperience,
+  KnowMe,
+} from "./styles";
 
 const Main = () => {
-  function instagram() {
-    window.open("https://www.instagram.com/thiagoheil/", "_blank");
-  }
+  function instagram() {}
 
-  function youtube() {
-    window.open(
-      "https://www.youtube.com/channel/UCLmj9Y-YTTftS9vdxZhuy3Q",
-      "_blank"
-    );
-  }
+  function youtube() {}
 
-  function linkedin() {
-    window.open("https://www.linkedin.com/in/thiago-heilmann/", "_blank");
-  }
+  function linkedin() {}
 
   let history = useHistory();
 
@@ -28,99 +33,189 @@ const Main = () => {
     history.push("/projetos");
   }
 
+  const handleLinkButton = (type) => {
+    if (type === "instagram") {
+      window.open("https://www.instagram.com/thiagoheil/", "_blank");
+    }
+    if (type === "linkedin") {
+      window.open("https://www.linkedin.com/in/thiago-heilmann/", "_blank");
+    }
+    if (type === "youtube") {
+      window.open(
+        "https://www.youtube.com/channel/UCLmj9Y-YTTftS9vdxZhuy3Q",
+        "_blank"
+      );
+    }
+    if (type === "sgurd") {
+      window.open("https://sgurd-b66a5.web.app/", "_blank");
+    }
+    if (type === "github") {
+      window.open("https://github.com/thiagoheil", "_blank");
+    }
+  };
+
   return (
     <>
       <Background>
         <Container>
-          <Profile></Profile>
+          <Profile>
+            <Image src={profilePicture} />
+            <Description>
+              <Text fontSize={64} color={"#e0e1dd"}>
+                Thiago Rafael Heilmann
+              </Text>
+              <HorizontalLine
+                color={"#e0e1dd"}
+                width={"100%"}
+                marginTop={4}
+                marginBottom={2}
+              />
+              <Text fontSize={32} color={"#e0e1dd"}>
+                Desenvolvedor Fullstack
+              </Text>
+              <Buttons>
+                <Button onClick={() => handleLinkButton("sgurd")}>sgurd</Button>
+                <Button onClick={() => handleLinkButton("linkedin")}>
+                  linkedin
+                </Button>
+                <Button onClick={() => handleLinkButton("youtube")}>
+                  youtube
+                </Button>
+                <Button onClick={() => handleLinkButton("instagram")}>
+                  instagram
+                </Button>
+              </Buttons>
+            </Description>
+          </Profile>
+
+          <ProfileDescription>
+            <Text
+              fontSize={48}
+              color={"#e0e1dd"}
+              marginLeft={32}
+              marginTop={32}
+            >
+              Quem sou?
+            </Text>
+            <Paragraph>
+              <Text
+                fontSize={20}
+                color={"#e0e1dd"}
+                marginLeft={32}
+                marginTop={32}
+              >
+                Me chamo Thiago, atualmente tenho 21 anos e estou cursando
+                Análise e Desenvolvimento de Sistemas.
+              </Text>
+              <Text
+                fontSize={20}
+                color={"#e0e1dd"}
+                marginLeft={32}
+                marginTop={12}
+              >
+                Sou uma pessoa simples que adora a complexidade da vida, tenho
+                vários interesses, e a cada dia que passa eu acabo descobrindo
+                mais um.
+              </Text>
+              <Text
+                fontSize={20}
+                color={"#e0e1dd"}
+                marginLeft={32}
+                marginTop={12}
+              >
+                Sou fanático por exercício físico, entre os que eu pratico
+                estão: boxe, muay thai, ciclismo e musculação. São eles que
+                fazem eu sentir que meu dia está completo, a cereja do bolo.
+              </Text>
+              <Text
+                fontSize={20}
+                color={"#e0e1dd"}
+                marginLeft={32}
+                marginTop={12}
+              >
+                Tenho interesse profundo no mundo da programação, tendo em vista
+                a infinidade de possibilidades que se pode fazer com um
+                computador. Sua complexidão me atraí.
+              </Text>
+              <Text
+                fontSize={20}
+                color={"#e0e1dd"}
+                marginLeft={32}
+                marginTop={12}
+              >
+                Determinado e focado, estou sempre em busca de me tornar melhor
+                do que eu fui ontem, o progresso é presente em meu futuro.
+              </Text>
+            </Paragraph>
+          </ProfileDescription>
+
+          <Characteristics>
+            <Qualitys>
+              <Text
+                fontSize={48}
+                color={"#e0e1dd"}
+                marginLeft={32}
+                marginTop={32}
+              >
+                Qualidades
+              </Text>
+            </Qualitys>
+            <Defects>
+              <Text
+                fontSize={48}
+                color={"#e0e1dd"}
+                marginLeft={32}
+                marginTop={32}
+              >
+                Defeitos
+              </Text>
+            </Defects>
+          </Characteristics>
+
+          <KnowMe>
+            <Text
+              fontSize={48}
+              color={"#e0e1dd"}
+              marginLeft={32}
+              marginTop={32}
+            >
+              Me conheça melhor:
+            </Text>
+            <Button
+              onClick={() => history.push("/projetos")}
+              height={96}
+              width={192}
+              marginLeft={32}
+              marginTop={16}
+              fontSize={16}
+            >
+              meus projetos
+            </Button>
+            <Button
+              onClick={() => handleLinkButton("github")}
+              height={96}
+              width={192}
+              marginLeft={32}
+              marginTop={16}
+              fontSize={16}
+            >
+              github
+            </Button>
+          </KnowMe>
+
+          <ProfissionalExperience>
+            <Text
+              fontSize={48}
+              color={"#e0e1dd"}
+              marginLeft={32}
+              marginTop={32}
+            >
+              Experiência Profissional
+            </Text>
+          </ProfissionalExperience>
         </Container>
       </Background>
     </>
-
-    // <body>
-    //   <header></header>
-
-    //   <main>
-    //     <div className="background2">
-    //       <div className="background1">
-    //         <div className="cardThiago"></div>
-    //         <div className="divheader">
-    //           <img
-    //             className="imgThiago"
-    //             src={eu}
-    //             alt="thiago rafael heilmann"
-    //           ></img>
-    //           <div className="textnome">
-    //             <h2 className="h2Thiago">Thiago Rafael Heilmann</h2>
-    //             <h2 className="jobthiago">Desenvolvedor Front-End/QA</h2>
-    //           </div>
-    //         </div>
-    //       </div>
-
-    //       <div className="div-botoes">
-    //         <button onClick={instagram} className="instagram">
-    //           INSTAGRAM
-    //         </button>
-    //         <button onClick={youtube} className="youtube">
-    //           YOUTUBE
-    //         </button>
-    //         <button onClick={linkedin} className="linkedin">
-    //           LINKEDIN
-    //         </button>
-    //         <button onClick={meusprojetos} className="meusprojetosbutton">
-    //           MEUS PROJETOS
-    //         </button>
-    //       </div>
-
-    //       <div className="quemsou">
-    //         <div className="div-quemsou">
-    //           <h1>Quem sou?</h1>
-    //           <p>
-    //             Me chamo Thiago, tenho 20 anos e atualmente estou cursando
-    //             Análise e Desenvolvimento de Sistemas. No momento estou
-    //             trabalhando como QA na Paipe | Tecnologia e Informação.
-    //           </p>
-    //           <p>
-    //             Sou uma pessoa que gosta muito do "novo", estou sempre
-    //             procurando coisas novas para satisfazer minha curiosidade sobre
-    //             o mundo que me cerca. O desconhecido é algo que me atrai.
-    //           </p>
-    //           <p>
-    //             Sou uma pessoa que gosta bastante de se aventurar, um dos meus
-    //             esportes favoritos é o ciclismo, eu amo pegar minha bike e sair
-    //             sem rumo em busca de um lugar novo para conhecer.
-    //           </p>
-    //         </div>
-    //       </div>
-
-    //       <section className="exp">
-    //         <div classname="exp-background">
-    //           <h1>Experiência Profissional</h1>
-    //         </div>
-
-    //         <div className="paipe">
-    //           <img src={paipe} alt="Logo da paipe" className="img-paipe"></img>
-    //           <div className="paipe-text">
-    //             <h2>Paipe | Tecnologia e Informação</h2>
-    //             <h3>Agosto de 2021/Atuante</h3>
-    //             <h3>Desenvolvedor Front-End</h3>
-    //           </div>
-    //         </div>
-
-    //         <div className="next">
-    //           <img src={next} alt="logo da next" className="img-next"></img>
-    //           <div className="next-text">
-    //             <h2>Next Brazil</h2>
-    //             <h3>Julho de 2020/Agosto de 2021</h3>
-    //             <h3>Operador de Corte a Laser</h3>
-    //           </div>
-    //         </div>
-    //       </section>
-    //     </div>
-    //   </main>
-
-    //   <footer></footer>
-    // </body>
   );
 };
 
