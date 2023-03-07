@@ -1,4 +1,11 @@
 import profilePicture from "../../assets/img/thiagoProfile.jpeg";
+import reactNative from "../../assets/img/reactNative.png";
+import nestJS from "../../assets/img/nestJS.svg";
+import docker from "../../assets/img/docker.png";
+import javascript from "../../assets/img/javascript.png";
+import cssLogo from "../../assets/img/cssLogo.png";
+import typescript from "../../assets/img/typescript.png";
+import htmlLogo from "../../assets/img/htmlLogo.png";
 import { useHistory } from "react-router-dom";
 
 import {
@@ -18,20 +25,13 @@ import {
   Defects,
   ProfissionalExperience,
   KnowMe,
+  Icons,
+  Icon,
+  IconImage,
 } from "./styles";
 
 const Main = () => {
-  function instagram() {}
-
-  function youtube() {}
-
-  function linkedin() {}
-
   let history = useHistory();
-
-  function meusprojetos() {
-    history.push("/projetos");
-  }
 
   const handleLinkButton = (type) => {
     if (type === "instagram") {
@@ -167,8 +167,100 @@ const Main = () => {
                 marginLeft={32}
                 marginTop={32}
               >
-                Defeitos
+                Conhecimento técnico
               </Text>
+              <Icons>
+                <Icon>
+                  <IconImage src={javascript} />
+                  <Text
+                    fontSize={20}
+                    color={"#e0e1dd"}
+                    fontFamily={"Noto Sans Mono"}
+                    marginLeft={12}
+                  >
+                    - Javascript
+                  </Text>
+                </Icon>
+                <Icon>
+                  <IconImage src={typescript} />
+                  <Text
+                    fontSize={20}
+                    color={"#e0e1dd"}
+                    fontFamily={"Noto Sans Mono"}
+                    marginLeft={12}
+                  >
+                    - Typescript
+                  </Text>
+                </Icon>
+                <Icon>
+                  <IconImage src={cssLogo} />
+                  <Text
+                    fontSize={20}
+                    color={"#e0e1dd"}
+                    fontFamily={"Noto Sans Mono"}
+                    marginLeft={12}
+                  >
+                    - Cascading Style Sheets
+                  </Text>
+                </Icon>
+                <Icon>
+                  <IconImage src={htmlLogo} />
+                  <Text
+                    fontSize={20}
+                    color={"#e0e1dd"}
+                    fontFamily={"Noto Sans Mono"}
+                    marginLeft={12}
+                  >
+                    - Hypertext Markup Language
+                  </Text>
+                </Icon>
+                <Icon>
+                  <IconImage src={reactNative} />
+                  <Text
+                    fontSize={20}
+                    color={"#e0e1dd"}
+                    fontFamily={"Noto Sans Mono"}
+                    marginLeft={12}
+                  >
+                    - ReactJS
+                  </Text>
+                </Icon>
+
+                <Icon>
+                  <IconImage src={nestJS} />
+                  <Text
+                    fontSize={20}
+                    color={"#e0e1dd"}
+                    fontFamily={"Noto Sans Mono"}
+                    marginLeft={12}
+                  >
+                    - NestJS
+                  </Text>
+                </Icon>
+                <Icon>
+                  <IconImage src={reactNative} />
+                  <Text
+                    fontSize={20}
+                    color={"#e0e1dd"}
+                    fontFamily={"Noto Sans Mono"}
+                    marginLeft={12}
+                  >
+                    - React-Native
+                  </Text>
+                </Icon>
+
+                <Icon>
+                  <IconImage src={docker} />
+                  <Text
+                    fontSize={20}
+                    color={"#e0e1dd"}
+                    fontFamily={"Noto Sans Mono"}
+                    marginLeft={12}
+                  >
+                    - Docker
+                  </Text>
+                </Icon>
+              </Icons>
             </Defects>
           </Characteristics>
 

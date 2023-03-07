@@ -46,6 +46,7 @@ export const Profile = styled.div`
   margin-top: 16px;
   background-color: #0d1b2a;
   height: 300px;
+  padding: 32px 0 32px 0;
 
   display: flex;
   align-items: center;
@@ -57,6 +58,11 @@ export const Image = styled.img`
   border-radius: 50%;
   width: 20%;
   border: 1px solid #e0e1dd;
+`;
+
+export const IconImage = styled.img`
+  width: 58px;
+  padding: 4px;
 `;
 
 export const Description = styled.div`
@@ -80,6 +86,33 @@ export const ProfileDescription = styled.div`
   border-radius: 12px;
   margin-top: 32px;
   height: 500px;
+`;
+
+export const Icons = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-left: 32px;
+  overflow-y: scroll;
+  height: 220px;
+  width: 80%;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #e0e1dd;
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+`;
+
+export const Icon = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const Paragraph = styled.div`
@@ -132,6 +165,8 @@ export const Text = styled.div`
   margin-left: ${({ marginLeft }) => (marginLeft ? `${marginLeft}px` : "0px")};
   margin-top: ${({ marginTop }) => (marginTop ? `${marginTop}px` : "0px")};
   color: ${({ color }) => (color ? `${color}` : "black")};
+  font-family: ${({ fontFamily }) =>
+    fontFamily ? `${fontFamily}, monospace` : ""};
 `;
 
 export const HorizontalLine = styled.hr`
