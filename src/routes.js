@@ -22,6 +22,7 @@ import LevelDez from "./pages/Projetos/projects/crackthecode/levels/levelDez";
 
 import CrudSystem from "./pages/Projetos/projects/crudsystem/crudsystem";
 import CrudSystemProgram from "./pages/Projetos/projects/crudsystem/crudSystemProgram";
+import HowDeepWillYouGo from "./pages/Projetos/projects/howDeepWillYouGo";
 
 function Routes() {
   return (
@@ -109,6 +110,11 @@ function Routes() {
           path="/projetos/crud-system/start"
           exact
           render={() => <CrudSystemProgram />}
+        />
+        <Route
+          path="/projetos/how-deep"
+          exact
+          render={() => <HowDeepWillYouGo />}
         />
       </Switch>
     </Router>
