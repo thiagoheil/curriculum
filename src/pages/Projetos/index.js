@@ -34,6 +34,10 @@ const Projetos = () => {
     history.push("/projetos/crud-system");
   };
 
+  const howDeep = () => {
+    history.push("/projetos/how-deep");
+  };
+
   return (
     <>
       <main className="mainProjects">
@@ -90,7 +94,9 @@ const Projetos = () => {
                 >
                   CRUD SYSTEM
                 </button>
-                <button className="projectButton">PROJETO 8</button>
+                <button className="projectButton" onClick={howDeep}>
+                  O quão fundo você vai?
+                </button>
               </div>
             </div>
           </div>
