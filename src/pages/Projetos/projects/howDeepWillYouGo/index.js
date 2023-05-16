@@ -79,24 +79,86 @@ const HowDeepWillYouGo = () => {
       level: 1,
     },
     {
-      pergunta: "Qual sua primeira memória que você se recorda?",
+      pergunta: "Você se lembra a ultima vez que brincou de esconde-esconde?",
       id: 11,
+      level: 1,
+    },
+    {
+      pergunta: "O que te faz feliz?",
+      id: 12,
+      level: 1,
+    },
+    {
+      pergunta:
+        "Você ficou preso em uma ilha, liste 5 items para levar e justifique.",
+      id: 13,
+      level: 1,
+    },
+    {
+      pergunta: "Qual foi a maior aventura que você já fez?",
+      id: 14,
+      level: 1,
+    },
+    {
+      pergunta: "Qual sua primeira memória que você se recorda?",
+      id: 15,
       level: 2,
     },
     {
       pergunta: "Conte uma história vergonhosa pela qual você já passou",
-      id: 12,
+      id: 16,
       level: 2,
     },
     {
       pergunta:
         "Qual é uma oportunidade pela qual você é grato ter aproveitado",
-      id: 13,
+      id: 17,
+      level: 2,
+    },
+    {
+      pergunta: "O que você faria todos os dias sem reclamar?",
+      id: 18,
+      level: 2,
+    },
+    {
+      pergunta:
+        "Cite um evento da sua história que você gostaria de ter mudado.",
+      id: 19,
+      level: 2,
+    },
+    {
+      pergunta: "Qual sua memória de infância favorita?",
+      id: 20,
+      level: 2,
+    },
+    {
+      pergunta: "O que as pessoas sempre confudem sobre você?",
+      id: 21,
+      level: 2,
+    },
+    {
+      pergunta: "Qual sua melhor característica?",
+      id: 22,
+      level: 2,
+    },
+    {
+      pergunta: "Qual seu maior princípio?",
+      id: 23,
+      level: 2,
+    },
+    {
+      pergunta: "Qual a sensação que você mais gosta no mundo?",
+      id: 24,
+      level: 2,
+    },
+    {
+      pergunta: "",
+      id: 25,
       level: 2,
     },
     {
       pergunta: "O que você tem medo de passar para suas crianças?",
-      id: 14,
+      id: 26,
       level: 3,
     },
   ];
