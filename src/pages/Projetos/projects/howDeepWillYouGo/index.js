@@ -152,13 +152,73 @@ const HowDeepWillYouGo = () => {
       level: 2,
     },
     {
-      pergunta: "",
+      pergunta: "Se você pudesse mudar algo sobre você, o que seria e por quê?",
       id: 25,
       level: 2,
     },
     {
-      pergunta: "O que você tem medo de passar para suas crianças?",
+      pergunta: "Quais são seus objetivos de longa data e quais passos você está tomando para atingi-lo?",
       id: 26,
+      level: 2,
+    },
+    {
+      pergunta: "Imagine que você tem todos os recursos e tempo que você precisa, como você passaria sua vida e que impacto você se esforçaria para causar?",
+      id: 27,
+      level: 2,
+    },
+    {
+      pergunta: "Como você define sucesso?",
+      id: 28,
+      level: 2,
+    },
+    {
+      pergunta: "Descreva um momento que mudou sua perspectiva de vida",
+      id: 29,
+      level: 2,
+    },
+    {
+      pergunta: "Quais alguns de seus maiores medos/inseguranças e como eles impactam na sua tomada de decisões?",
+      id: 30,
+      level: 2,
+    },
+    {
+      pergunta: "O que você tem medo de passar para suas crianças?",
+      id: 31,
+      level: 3,
+    },
+    {
+      pergunta: "Se você pudesse ter uma conversa com você mais jovem, que conselho/aviso você compartilharia?",
+      id: 32,
+      level: 3,
+    },
+    {
+      pergunta: "Como você lida com fracasso?",
+      id: 33,
+      level: 3,
+    },
+    {
+      pergunta: "Que papel a autorreflexão desempenha em seu crescimento pessoal e como você a incorpora à sua rotina?",
+      id: 34,
+      level: 3,
+    },
+    {
+      pergunta: "O que você acredita ser o sentido/significado da vida?",
+      id: 35,
+      level: 3,
+    },
+    {
+      pergunta: "Qual a maior lição que você aprendeu com erros passados e como isso te moldou?",
+      id: 36,
+      level: 3,
+    },
+    {
+      pergunta: "Quais as qualidades/características que você mais admira nos outros?",
+      id: 37,
+      level: 3,
+    },
+    {
+      pergunta: "Quais as qualidades/características que você mais admira nos outros?",
+      id: 38,
       level: 3,
     },
   ];
